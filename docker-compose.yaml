@@ -31,8 +31,8 @@ services:
          - mongodb
   redis:
     image: redis:7
-    container_name:redis     #docker run -d --name --network roboshop redis:7
-networks:
+    container_name: redis     #docker run -d --name --network roboshop redis:7
+  networks:
   default: # this means all the services in this file use this network
     name: roboshop
     driver: bridge
