@@ -20,6 +20,8 @@ services:
     - catalogue
     - user
     - cart
+    - shipping
+    - payment
   user:
         build: ./user
         image: joindevops/user:v1
