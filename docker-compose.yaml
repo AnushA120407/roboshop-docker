@@ -88,11 +88,11 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: roboshop
       RABBITMQ_DEFAULT_PASS: roboshop123
-    volumes:
-    - rabbitmq:/var/lib/rabbitmq     
+    # volumes:
+    # - rabbitmq:/var/lib/rabbitmq     
 networks:
   default: # this means all the services in this file use this network
     name: roboshop
     driver: bridge
     external: false # if true it should be created manually, if false docker creates this network
-    rabbitmq: # docker volume create rabbitmq
+    # rabbitmq: # docker volume create rabbitmq
